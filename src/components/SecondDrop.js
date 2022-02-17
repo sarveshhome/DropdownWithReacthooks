@@ -8,17 +8,18 @@ const SecondDrop =()=>{
         {label:"UK",value:"3"}
     ]);
    
+   var options= items.map((item,key)=>{
+      return ( <option key={item.value} value={item.label}>{item.label} </option> )
+    });
     useEffect(()=>{},[]);
-
     return(
                     <div> 
                         <div>country</div>
-
-                    <select>
-                        {items.map((item,key)=>{
-                            <option key={key}>{item.label} {console.log(item.label)} </option>
-                        })}
-                    </select>
+                        <select>
+                            {items.map((item,key)=>{
+                                return ( <option key={item.value} value={item.label}>{item.label} </option> )
+                            })}
+                        </select>                   
                     </div>
   );
 }
