@@ -21,6 +21,7 @@ export default function Test() {
   const [selectedValue, setSelectedValue] = React.useState("");
 
   const handleSelected = (e) => {
+    e.preventDefault();
     setValue(e.target.value);
     if (e.target.value === "Admin") {
       setSelectedValue(<Admin />);
