@@ -19,7 +19,9 @@ const SearchText = () => {
             />
             <ul>
                 {names
-                    .filter(name => name.match(new RegExp(searchValue, "i")))
+                    .filter(name => name.includes(searchValue))
+                    //.filter(name => name.indexOf(searchValue)=== -1)
+                    //.filter(name => name.match(new RegExp(searchValue, "i")))
                     .map(name => {
                         return <li key={name}>{name} </li>
                     })}

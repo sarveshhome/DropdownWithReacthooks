@@ -5,6 +5,7 @@ import SecondDrop from './components/SecondDrop';
 import ThirdDropdown from './components/ThirdDropdown';
 import FourthDropdown from './components/FourthDropdown';
 import SearchText from './components/SearchText';
+import SearchText2 from './components/SearchText2';
 function App() {
   return (
     <div className="App">      
@@ -20,6 +21,9 @@ function App() {
        </>
        <>
        <SearchText></SearchText>
+       </>
+       <>
+         <SearchText2></SearchText2>
        </>
     </div>
   );
